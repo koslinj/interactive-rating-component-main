@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.hidden{
+    display: none;
+}
+
+.container1{
+    width: 400px;
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(circle at top, hsl(213, 19%, 18%) 0%, hsl(216, 12%, 8%) 100%);
+    border-radius: 4vh;
+}
+
+.container2{
+    width: 400px;
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(circle at top, hsl(213, 19%, 18%) 0%, hsl(216, 12%, 8%) 100%);
+    border-radius: 4vh;
+    text-align: center;
+}
+.container2 .ratings{
+    margin-top: 40px;
+}
+
+.icon{
+    margin: 30px 30px 20px;
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background-color: hsl(213, 19%, 18%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.ratings{
+    display: flex;
+    justify-content: center;
+}
+
+.num{
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background-color: hsl(213, 19%, 18%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0px 16px;
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    font-size: smaller;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.num:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.num:focus{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+h1{
+    margin: 20px 30px 10px;
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+
+p{
+    margin: 10px 30px 30px;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(217, 12%, 63%);
+    
+}
+
+.submit{
+    align-self: center;
+    margin: 30px;
+    height: 45px;
+    width: 100%;
+    border-radius: 20px;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.przycisk{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    background-color: hsl(213, 19%, 18%);
+    font-size: 15px;
+    width: 50%;
+    border-radius: 20px;
+    aspect-ratio: 11 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info p{
+    margin: 0px;
+    font-size: 14px;
+    font-family: 'Overpass', sans-serif;
+    color: orange;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .container1, .container2{
+        width: 350px;
+        background-color: green;
+        aspect-ratio: 4 / 5;
+    }
+}
